@@ -1,0 +1,85 @@
+* {
+    /* padding:0;
+    margin:0; */
+    box-sizing: border-box;
+}
+
+.main {
+    margin: 15px;
+    width: 608px;
+    height: 610px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.main>.main1,
+.main>.main2,
+.main>.main3,
+.main>.main4,
+.main>.main5,
+.main>.main6,
+.main>.main7,
+.main>.main8 {
+    display: flex;
+}
+
+.main1>*,
+.main2>*,
+.main3>*,
+.main4>*,
+.main5>*,
+.main6>*,
+.main7>*,
+.main8>* {
+    /* border: 1px solid black; */
+    height: 76px;
+    width: 76px;
+}
+
+.main1>div:nth-child(odd),
+.main3>div:nth-child(odd),
+.main5>div:nth-child(odd),
+.main7>div:nth-child(odd) {
+    background-color: bisque;
+
+}
+
+.main2>div:nth-child(odd),
+.main4>div:nth-child(odd),
+.main6>div:nth-child(odd),
+.main8>div:nth-child(odd) {
+    background-color: green;
+
+}
+
+.main1>div:nth-child(even),
+.main3>div:nth-child(even),
+.main5>div:nth-child(even),
+.main7>div:nth-child(even) {
+    background-color: green;
+}
+
+.main2>div:nth-child(even),
+.main4>div:nth-child(even),
+.main6>div:nth-child(even),
+.main8>div:nth-child(even) {
+    background-color: bisque;
+}
+
+.main2>div,
+.main1>div,
+.main8>div,
+.main7>div {
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 1sec ease;
+    cursor: pointer;
+}
+
+.box>div:hover {
+    font-size: 70px;
+}
